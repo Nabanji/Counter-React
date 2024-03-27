@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #002339;
+}
+
+
+.counter h1 {
+  font-size: 70px;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  width: 120px;
+  height: 40px;
+  margin: 0px 4px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .4s all ease-in-out;
+}
+
+.buttons button:hover {
+  color: orangered;
+}
+
+.increase {
+  background-color: green;
+}
+
+.decrease {
+  background-color: red;
+}
+
+@media screen and (max-width: 450px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons button {
+    margin: 3px 0px;
+  }
+
+}
